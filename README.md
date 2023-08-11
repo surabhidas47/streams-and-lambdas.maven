@@ -12,9 +12,9 @@
 
 ## Part 2
 * **Objective** - to implement the following classes:
-	* `ArrayConverter` - demonstrates the conversion from `SomeType[]` to
+	* `ArrayConverter` _- demonstrates the conversion from `SomeType[]` to
 		* list representation: `List<SomeType>`
-		* stream representation: `Stream<SomeType>`
+		* stream representation: `Stream<SomeType>`_
 	* `ListConverter` - demonstrates the conversion from `List<SomeType>` to
 		* array representation: `SomeType[]`
 		* stream representation: `Stream<SomeType>`
