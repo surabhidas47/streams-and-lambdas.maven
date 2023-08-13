@@ -36,7 +36,8 @@ public final class PersonWarehouse implements Iterable<Person> {
         //p is the instance of poeple
 
         //this is comparable to to what we do when we use a for each
-        return people.stream().map(p -> p.getName())
+        return people.stream()
+                .map(p -> p.getName())
                 .collect(Collectors.toList());
     }
 
@@ -50,7 +51,8 @@ public final class PersonWarehouse implements Iterable<Person> {
         Set <String> unique = new HashSet<>();
 
 
-        return people.stream().filter(person ->
+        return people.stream().
+                filter(person ->
                 unique.add(person.getName())
         );
     }

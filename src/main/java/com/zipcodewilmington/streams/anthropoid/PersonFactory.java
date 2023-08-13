@@ -57,7 +57,8 @@ public final class PersonFactory {
         //now we are going to use streams
 
 
-        return Stream.generate(this::createRandomPerson)
+        return Stream.generate(()->createRandomPerson())
+                //this::createRandomPerson)
                 .limit(listSize)
                 //collect is for lists
                 .collect(Collectors.toList());
